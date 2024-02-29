@@ -98,6 +98,8 @@ section .promptButton {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section .promptButton:hover {
