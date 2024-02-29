@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロンプト作成ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="textdisplay">
+            <div id="display-area"></div>
+        </div>
+        <h1><a href="">プロンプト作成ツール(テスト)</a></h1>
+    </header>
+    <div id="container">
+        <div id="leftcontainer">
+        </div>
+        <div id="centercontainer">
+        </div>
+        <div id="rightcontainer">
+            <div id="optionalContainer">
+                <div id="output">
+                </div>
+                <div id="option">
+                    <label><input type="checkbox" id="newline" onclick="extractText('destination', 'output')"><span
+                            id="newlinespan">new line</span></label><br>
+                    <button id="copy" onclick="copyExtract()">copy</button>
+                </div>
+                <div id="destination" my_name="container2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        このサイトの内容の無断転載を禁じます。 &copy; 2024
+    </footer>
+</body>
+<script src="array.js"></script>
+<script src="script.js"></script>
+
+</html>
