@@ -163,19 +163,11 @@ section .promptButton:hover {
     width: 8px;
 }
 
-#leftcontainer::-webkit-scrollbar-track,
-#centercontainer::-webkit-scrollbar-track,
-#rightcontainer::-webkit-scrollbar-track,
-#destination::-webkit-scrollbar-track,
-#output::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #555;
 }
 
-#leftcontainer::-webkit-scrollbar-thumb,
-#centercontainer::-webkit-scrollbar-thumb,
-#rightcontainer::-webkit-scrollbar-thumb,
-#destination::-webkit-scrollbar-thumb,
-#output::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #aaa;
 }
 
