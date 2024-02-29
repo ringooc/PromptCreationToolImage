@@ -2,17 +2,16 @@ document.getElementById("leftcontainer").innerHTML += Object.entries(x).map(([ke
 
 document.getElementById("centercontainer").innerHTML += Object.entries(x).map(([key, value]) =>
     `<section
-        my_name="${key}"
         id="${key}"
         ><h2 id="categoryHeader">${key}</h2>${Object.entries(value).map(([subKey, subValue]) =>
-        `<button
+        `<span my_name="${subKey}"><button
         class="promptButton"
         style="background-image: url(img/${subKey}.png);"
-        onclick="moveButton('${key}', 'container2',this)"
-        oncontextmenu="rightMoveButton('container2', '${key}',this); return false;"
+        onclick="moveButton('${subKey}', 'container2',this)"
+        oncontextmenu="rightMoveButton('container2', '${subKey}',this); return false;"
         onmouseover="selectSpanInDiv('output', '${subKey}', this)"
         prompt="${subValue}"
-        >${subKey}</button>`).join('')}</section>`
+        >${subKey}</button></span>`).join('')}</section>`
 ).join('');
 
 function moveButton(sourceId, destinationId, button) {
